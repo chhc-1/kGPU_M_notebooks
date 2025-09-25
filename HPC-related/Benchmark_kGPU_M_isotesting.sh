@@ -9,15 +9,14 @@
 
 #SBATCH --time=03:00:00
 
-#SBATCH --output=run.err
-#SBATCH --error=run.out
+#SBATCH --output=run.out
+#SBATCH --error=run.err
 
 
 module load julia/1.11.6
 module load cuda/12.3
 
 
-NUM_SAMPLES=10000
 INTERVAL=1
 OUTPUT_FILE="USAGE.log"
 ##START_TIME = $(date +%s)
